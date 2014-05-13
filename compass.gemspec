@@ -4,7 +4,7 @@ require File.join(path, 'compass/version')
 Gem::Specification.new do |gemspec|
   gemspec.name = "compass"
   gemspec.version = Compass::VERSION # Update the VERSION.yml file to set this.
-  gemspec.date = "#{Time.now.year}-#{Time.now.month}-#{Time.now.day}" # Automatically update for each build
+  gemspec.date = Time.now.strftime('%Y-%m-%d')
   gemspec.description = "Compass is a Sass-based Stylesheet Framework that streamlines the creation and maintainance of CSS."
   gemspec.homepage = "http://compass-style.org"
   gemspec.authors = ["Chris Eppstein", "Eric A. Meyer", "Brandon Mathis"]

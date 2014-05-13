@@ -31,7 +31,7 @@
 // - Safari
 // - Firefox 3.6
 
-@mixin linear-gradient($color-stops, $start: top, $image: false) {
+@mixin deprecated-linear-gradient($color-stops, $start: top, $image: false) {
   // Firefox's gradient api is nice.
   // Webkit's gradient api sucks -- hence these backflips:
   $background: unquote("");
@@ -67,7 +67,7 @@
 // - Safari
 // - Firefox 3.6
 
-@mixin radial-gradient($color-stops, $center-position: center center, $image: false) {
+@mixin deprecated-radial-gradient($color-stops, $center-position: center center, $image: false) {
   $center-position: unquote($center-position);
   $end-pos: grad-end-position($color-stops, true);
   $background: unquote("");
